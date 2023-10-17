@@ -21,11 +21,10 @@
     />
     <p id="face-count">Faces Detected: 0</p>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-      $(document).ready(function () {
-        var video = document.getElementById("video-stream");
-        var faceCount = document.getElementById("face-count");
+      document.addEventListener("DOMContentLoaded", function () {
+        let video = document.getElementById("video-stream");
+        let faceCount = document.getElementById("face-count");
 
         if (video) {
           video.onloadedmetadata = function () {
